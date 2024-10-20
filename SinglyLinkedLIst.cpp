@@ -1,11 +1,23 @@
+//Prashant
+//23070123102
+//Singly linked list
+
+
 #include<iostream>
 using namespace std;
-int main()
-{
-    cout<<"Hello world";
-    int a;
-    cout<<"enter a number";
-    cin>>a;
-    return 0;
-    
-}
+
+class Link {
+    public:
+    int data;
+    Link* next;
+
+    Link(int num){
+        data=num;
+        next=NULL;
+    }
+};
+
+int main(){
+    Link* l1 = new Link(6);
+    cout<<l1->data<<"   "<<l1->next;
+    }
